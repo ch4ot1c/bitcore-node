@@ -15,7 +15,7 @@
   "servicesConfig": {
     "bitcoind": {
       "connect": [
-        { "rpcconnect": "127.0.0.1", "rpcport": 8332, "rpcuser": "bitcoin", "rpcpassword": "local321", "zmqpubrawtx": "tcp://127.0.0.1:28332" }
+        { "rpcconnect": "127.0.0.1", "rpcport": 7932, "rpcuser": "bitcoinprivate", "rpcpassword": "local321", "zmqpubrawtx": "tcp://127.0.0.1:28332" }
       ]
     }
   }

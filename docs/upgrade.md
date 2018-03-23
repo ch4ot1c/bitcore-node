@@ -23,7 +23,7 @@ To start reindexing add `reindex=1` during the **first startup only**.
 **Before**:
 ```json
 {
-  "datadir": "/home/<username>/.bitcoin",
+  "datadir": "/home/<username>/.btcprivate",
   "network": "livenet",
   "port": 3001,
   "services": [
@@ -47,15 +47,15 @@ To start reindexing add `reindex=1` during the **first startup only**.
   "servicesConfig": {
     "bitcoind": {
       "spawn": {
-        "datadir": "/home/<username>/.bitcoin",
-        "exec": "/home/<username>/bitcore-node/bin/bitcoind"
+        "datadir": "/home/<username>/.btcprivate",
+        "exec": "/home/<username>/bitcore-node/bin/btcpd"
       }
     }
   }
 }
 ```
 
-It will also be necessary to update `bitcoin.conf` settings, to include these fields:
+It will also be necessary to update `btcprivate.conf` settings, to include these fields:
 ```
 server=1
 whitelist=127.0.0.1

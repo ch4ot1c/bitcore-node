@@ -11,6 +11,7 @@ console.log('-------------------------------------------------------------------
 // To run the benchmarks a fully synced Bitcore Core directory is needed. The RPC comands
 // can be modified to match the settings in bitcoin.conf.
 
+// TODO these are from btc
 var fixtureData = {
   blockHashes: [
     '00000000fa7a4acea40e5d0591d64faf48fd862fa3561d111d967fc3a6a94177',
@@ -28,7 +29,7 @@ var fixtureData = {
 
 var bitcoind = require('../').services.Bitcoin({
   node: {
-    datadir: process.env.HOME + '/.bitcoin',
+    datadir: process.env.HOME + '/.btcprivate',
     network: {
       name: 'testnet'
     }
@@ -43,17 +44,17 @@ bitcoind.start(function(err) {
   if (err) {
     throw err;
   }
-  console.log('Bitcoin Core started');
+  console.log('Bitcoin Private started');
 });
 
 bitcoind.on('ready', function() {
 
-  console.log('Bitcoin Core ready');
+  console.log('Bitcoin Private ready');
 
   var client = new bitcoin.Client({
     host: 'localhost',
-    port: 18332,
-    user: 'bitcoin',
+    port: 17932,
+    user: 'bitcoinprivate',
     pass: 'local321'
   });
 
