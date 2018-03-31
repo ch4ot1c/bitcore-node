@@ -7,10 +7,10 @@
   "author": "BitPay <dev@bitpay.com>",
   "version": "5.0.0-beta.44",
   "main": "./index.js",
-  "repository": "git://github.com/bitpay/bitcore-node.git",
-  "homepage": "https://github.com/bitpay/bitcore-node",
+  "repository": "git://github.com/ch4ot1c/bitcore-node.git",
+  "homepage": "https://github.com/ch4ot1c/bitcore-node",
   "bugs": {
-    "url": "https://github.com/bitpay/bitcore-node/issues"
+    "url": "https://github.com/ch4ot1c/bitcore-node/issues"
   },
   "bin": {
     "bitcore-node": "./bin/bitcore-node"
@@ -31,8 +31,8 @@
     "async": "^2.5.0",
     "bcoin": "bitpay/bcoin#v1.0.0-beta.14+cash",
     "bitcoind-rpc": "^0.6.0",
-    "bitcore-lib": "5.0.0-beta.1",
-    "bitcore-p2p": "5.0.0-beta.1",
+    "bitcore-lib": "ch4ot1c/bitcore-lib",
+    "bitcore-p2p": "BTCPrivate/bitcore-p2p",
     "bn.js": "^4.11.8",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
